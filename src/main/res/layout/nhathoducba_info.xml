@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".NhaThoDucBaActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:layout_alignBottom="@+id/activity_3nd"
+        android:layout_marginBottom="-272dp"
+        app:srcCompat="@drawable/nha_tho"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_below="@+id/activity_3nd"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_marginTop="272dp"
+        android:layout_marginBottom="-83dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/activity_2nd"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-408dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="684dp"
+        android:layout_toEndOf="@id/imageView2"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/activity_3nd"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-204dp"
+        android:layout_toEndOf="@+id/activity_2nd"
+        android:onClick="Clickinfo"
+        android:text="MoreInfo" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_marginBottom="-329dp"
+        tools:context=".MapsFragment" />
+</RelativeLayout>
